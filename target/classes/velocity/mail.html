@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<title>邮件发送模板</title>
+</head>
+<style type="text/css">
+table, table tr th, table tr td {
+	border: 1px solid #0094ff;
+}
+
+table {
+	width: 100%;
+	min-height: 25px;
+	line-height: 25px;
+	text-align: center;
+	border-collapse: collapse;
+	padding: 2px;
+}
+</style>
+<body>
+	<div>
+		<h2>您好,${userName}</h2>
+		您的email地址是：<a href="mailto:${email}"> ${email}</a>
+	</div>
+
+	<br />
+	<table>
+		<thead>
+			<tr>
+				<td colspan="3">人员信息</td>
+			</tr>
+		</thead>
+		<tr>
+			<th>姓名</th>
+			<th>性别</th>
+			<th>年龄</th>
+		</tr>
+		#foreach($member in $members)
+		<tr>
+			<td>$member.name</td>
+			<td>$member.gender</td>
+			<td>$member.age</td>
+		</tr>
+		#end
+	</table>
+</body>
+</html>

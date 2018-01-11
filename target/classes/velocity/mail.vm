@@ -1,0 +1,8 @@
+#*
+    #*是多行注释符
+    ##单行注释符
+    #include("mail.html")
+    #include 引入文件不会解析，可引入多个文件，
+    #parse会将引入的文件解析，但是只能引入一个
+*#
+#parse("velocity/mail.html")

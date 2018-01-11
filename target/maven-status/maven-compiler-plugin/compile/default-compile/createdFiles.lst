@@ -1,0 +1,8 @@
+com\fang\mail\service\impl\MailSenderServiceImpl.class
+com\fang\mail\controller\MailTestController.class
+com\fang\mail\service\IMailSenderService.class
+com\fang\mail\service\IMailTestService.class
+com\fang\mail\service\MailConfigDTO.class
+com\fang\mail\service\impl\MailTestServiceImpl.class
+com\fang\mail\pojo\Member.class
+com\fang\mail\service\VelocityConfigDTO.class
